@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '20'  # Use the Node.js version compatible with your project
 
-      -name : Install pnpm
+      - name: Install pnpm
         run: npm install -g pnpm
 
       - name: Install dependencies
