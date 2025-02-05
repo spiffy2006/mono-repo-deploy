@@ -6,7 +6,9 @@
   "packageManager": "pnpm@8.14.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpm --parallel --stream -r run dev"
+    "dev": "pnpm --parallel --stream -r run dev",
+    "frontend-deploy": "pnpm --filter packages/shared-types run build && pnpm --filter apps/frontend run build",
+    "backend-deploy": "pnpm --filter packages/shared-types run build && pnpm --filter apps/backend run build"
   },
   "keywords": [],
   "author": "",
